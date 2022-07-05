@@ -1,0 +1,16 @@
+<h1 class="text-center my-4">About Us Module loaded</h1>
+<div class="d-flex justify-content-center">
+    <div class="d-flex btn-group justify-content-center w-25">
+        <a
+            [ngClass]="selectClassComp()"
+            (click)="selectBtn('comp')"
+            routerLink="companyAboutUs"
+        >Company</a>
+        <a
+            [ngClass]="selectClassProd()"
+            (click)="selectBtn('prod')"
+            routerLink="productAboutUs"
+        >Product</a>
+    </div>
+</div>
+<router-outlet></router-outlet>
